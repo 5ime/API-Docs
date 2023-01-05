@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>百度热搜榜获取 | Ten·API使用文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d3b3b1b968a56124689d1366adeacf8f";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    <script data-ad-client="ca-pub-1759509770249694" async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    <meta name="description" content="Ten·API使用文档">
+    
+    <link rel="preload" href="/old/assets/css/0.styles.20406968.css" as="style"><link rel="preload" href="/old/assets/js/app.2810aac4.js" as="script"><link rel="preload" href="/old/assets/js/2.81e6afc7.js" as="script"><link rel="preload" href="/old/assets/js/9.0b9c18c2.js" as="script"><link rel="preload" href="/old/assets/js/3.0e78cc26.js" as="script"><link rel="preload" href="/old/assets/js/7.6a2e1261.js" as="script"><link rel="prefetch" href="/old/assets/js/10.f55428fc.js"><link rel="prefetch" href="/old/assets/js/11.d08fcb2d.js"><link rel="prefetch" href="/old/assets/js/12.16afd671.js"><link rel="prefetch" href="/old/assets/js/13.3c7adfd7.js"><link rel="prefetch" href="/old/assets/js/14.ed621cc9.js"><link rel="prefetch" href="/old/assets/js/15.add0e0fd.js"><link rel="prefetch" href="/old/assets/js/16.5f79d50e.js"><link rel="prefetch" href="/old/assets/js/17.7384c781.js"><link rel="prefetch" href="/old/assets/js/18.6060dcc8.js"><link rel="prefetch" href="/old/assets/js/19.cb9e9034.js"><link rel="prefetch" href="/old/assets/js/20.f0330d80.js"><link rel="prefetch" href="/old/assets/js/21.f162a7a9.js"><link rel="prefetch" href="/old/assets/js/22.ea1c4a77.js"><link rel="prefetch" href="/old/assets/js/23.1d5383f1.js"><link rel="prefetch" href="/old/assets/js/24.e799991a.js"><link rel="prefetch" href="/old/assets/js/25.57ed78c1.js"><link rel="prefetch" href="/old/assets/js/26.b800282b.js"><link rel="prefetch" href="/old/assets/js/27.9bf79a83.js"><link rel="prefetch" href="/old/assets/js/28.7c45d122.js"><link rel="prefetch" href="/old/assets/js/29.9c69b799.js"><link rel="prefetch" href="/old/assets/js/30.6d9e125e.js"><link rel="prefetch" href="/old/assets/js/31.ded013bf.js"><link rel="prefetch" href="/old/assets/js/32.29279631.js"><link rel="prefetch" href="/old/assets/js/33.ca150b5a.js"><link rel="prefetch" href="/old/assets/js/34.9ff17426.js"><link rel="prefetch" href="/old/assets/js/35.5eee834f.js"><link rel="prefetch" href="/old/assets/js/36.34aeadc0.js"><link rel="prefetch" href="/old/assets/js/37.3a57ca73.js"><link rel="prefetch" href="/old/assets/js/38.3236b9bd.js"><link rel="prefetch" href="/old/assets/js/39.cf4ab88f.js"><link rel="prefetch" href="/old/assets/js/4.e6f37e72.js"><link rel="prefetch" href="/old/assets/js/40.33ca295b.js"><link rel="prefetch" href="/old/assets/js/41.3b9ef542.js"><link rel="prefetch" href="/old/assets/js/42.0ece04dc.js"><link rel="prefetch" href="/old/assets/js/43.5e0912e3.js"><link rel="prefetch" href="/old/assets/js/44.4e0eb8a3.js"><link rel="prefetch" href="/old/assets/js/45.38d5643d.js"><link rel="prefetch" href="/old/assets/js/46.5df82a48.js"><link rel="prefetch" href="/old/assets/js/47.79141cf5.js"><link rel="prefetch" href="/old/assets/js/48.bb1ea70f.js"><link rel="prefetch" href="/old/assets/js/49.65e07e39.js"><link rel="prefetch" href="/old/assets/js/5.fa568e60.js"><link rel="prefetch" href="/old/assets/js/50.bbc3fed8.js"><link rel="prefetch" href="/old/assets/js/51.591c0f54.js"><link rel="prefetch" href="/old/assets/js/52.7e14e45d.js"><link rel="prefetch" href="/old/assets/js/53.edb49ab9.js"><link rel="prefetch" href="/old/assets/js/54.84a1d456.js"><link rel="prefetch" href="/old/assets/js/55.81688193.js"><link rel="prefetch" href="/old/assets/js/56.5a629967.js"><link rel="prefetch" href="/old/assets/js/57.c03e3e0b.js"><link rel="prefetch" href="/old/assets/js/58.609a0ac1.js"><link rel="prefetch" href="/old/assets/js/59.3144d718.js"><link rel="prefetch" href="/old/assets/js/6.cd3779f1.js"><link rel="prefetch" href="/old/assets/js/60.75c34190.js"><link rel="prefetch" href="/old/assets/js/61.295b3069.js"><link rel="prefetch" href="/old/assets/js/62.16095a3a.js"><link rel="prefetch" href="/old/assets/js/63.8147bac6.js"><link rel="prefetch" href="/old/assets/js/64.c88f5d40.js"><link rel="prefetch" href="/old/assets/js/65.d9e372c1.js"><link rel="prefetch" href="/old/assets/js/66.801fb21d.js"><link rel="prefetch" href="/old/assets/js/67.edbf2a71.js"><link rel="prefetch" href="/old/assets/js/68.e58dcea8.js"><link rel="prefetch" href="/old/assets/js/69.0f5c219e.js"><link rel="prefetch" href="/old/assets/js/70.561189d4.js"><link rel="prefetch" href="/old/assets/js/71.53bb9491.js"><link rel="prefetch" href="/old/assets/js/72.054e90c0.js"><link rel="prefetch" href="/old/assets/js/73.3993ee79.js"><link rel="prefetch" href="/old/assets/js/74.54281e37.js"><link rel="prefetch" href="/old/assets/js/75.b4ab7982.js"><link rel="prefetch" href="/old/assets/js/76.0af7598c.js"><link rel="prefetch" href="/old/assets/js/77.301f93d5.js"><link rel="prefetch" href="/old/assets/js/78.975d7189.js"><link rel="prefetch" href="/old/assets/js/79.234d05d5.js"><link rel="prefetch" href="/old/assets/js/8.d050fc1c.js"><link rel="prefetch" href="/old/assets/js/80.4b47b889.js"><link rel="prefetch" href="/old/assets/js/81.89d40d2e.js"><link rel="prefetch" href="/old/assets/js/82.7353cf60.js"><link rel="prefetch" href="/old/assets/js/83.40dabec1.js"><link rel="prefetch" href="/old/assets/js/84.6f27f2e7.js"><link rel="prefetch" href="/old/assets/js/85.c81a24ba.js"><link rel="prefetch" href="/old/assets/js/86.e001d06c.js"><link rel="prefetch" href="/old/assets/js/87.858fc7d8.js"><link rel="prefetch" href="/old/assets/js/88.1a06bf44.js"><link rel="prefetch" href="/old/assets/js/89.ad3ce007.js"><link rel="prefetch" href="/old/assets/js/90.75356232.js">
+    <link rel="stylesheet" href="/old/assets/css/0.styles.20406968.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/old/" class="home-link router-link-active"><!----> <span class="site-name">Ten·API使用文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/old/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://tenapi.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Ten·Api
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://5ime.cn/about/#%E6%8A%95%E9%A3%9F-I-Am-I" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  打赏站长
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/old/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="https://tenapi.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Ten·Api
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://5ime.cn/about/#%E6%8A%95%E9%A3%9F-I-Am-I" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  打赏站长
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>指南</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>QQ类</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>音乐类</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网址类</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网站类</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>微博类</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>热搜类</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/old/resou.html" class="sidebar-link">微博热搜榜获取</a></li><li><a href="/old/zhihuresou.html" class="sidebar-link">知乎热搜榜获取</a></li><li><a href="/old/douyinresou.html" class="sidebar-link">抖音热搜榜获取</a></li><li><a href="/old/bilihot.html" class="sidebar-link">Bilibili热搜榜获取</a></li><li><a href="/old/baiduhot.html" aria-current="page" class="active sidebar-link">百度热搜榜获取</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/old/baiduhot.html#请求url" class="sidebar-link">请求URL</a></li><li class="sidebar-sub-header"><a href="/old/baiduhot.html#请求示例" class="sidebar-link">请求示例</a></li><li class="sidebar-sub-header"><a href="/old/baiduhot.html#返回数据" class="sidebar-link">返回数据</a></li><li class="sidebar-sub-header"><a href="/old/baiduhot.html#调用效果" class="sidebar-link">调用效果</a></li><li class="sidebar-sub-header"><a href="/old/baiduhot.html#请求参数" class="sidebar-link">请求参数</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>二维码类</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Bilibili类</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>短视频去水印类</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/old/yiyan.html" class="sidebar-link">一言随机输出一句话</a></li><li><a href="/old/img.html" class="sidebar-link">随机二次元动漫图片</a></li><li><a href="/old/bing.html" class="sidebar-link">每日Bing必应美图</a></li><li><a href="/old/lishi.html" class="sidebar-link">历史上的今天</a></li><li><a href="/old/lanzou.html" class="sidebar-link">蓝奏云直链获取</a></li><li><a href="/old/ipinfo.html" class="sidebar-link">IP签名档</a></li><li><a href="/old/tel.html" class="sidebar-link">手机号归属地查询</a></li><li><a href="/old/st.html" class="sidebar-link">申通快递查询</a></li><li><a href="/old/poster.html" class="sidebar-link">海报一键生成</a></li><li><a href="/old/laji.html" class="sidebar-link">垃圾分类查询</a></li><li><a href="/old/wether.html" class="sidebar-link">城市天气预报获取</a></li><li><a href="/old/color.html" class="sidebar-link">随机生成一种颜色</a></li><li><a href="/old/yyt.html" class="sidebar-link">音悦台视频解析下载</a></li><li><a href="/old/mc.html" class="sidebar-link">Minecraft正版用户UUID获取</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="百度热搜榜获取"><a href="#百度热搜榜获取" class="header-anchor">#</a> 百度热搜榜获取 <span class="badge tip" style="vertical-align:top;" data-v-d17b05c2>正常</span></h1> <h2 id="请求url"><a href="#请求url" class="header-anchor">#</a> 请求URL</h2> <div class="language- extra-class"><pre class="language-text"><code>https://tenapi.cn/baiduhot/
+</code></pre></div><h2 id="请求示例"><a href="#请求示例" class="header-anchor">#</a> 请求示例 <span class="badge warning" style="vertical-align:top;" data-v-d17b05c2>GET</span></h2> <div class="language- extra-class"><pre class="language-text"><code>https://tenapi.cn/baiduhot/
+</code></pre></div><h2 id="返回数据"><a href="#返回数据" class="header-anchor">#</a> 返回数据 <span class="badge warning" style="vertical-align:top;" data-v-d17b05c2>JSON</span></h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;上海倡议做好14天物资储备?居委回应&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4997113&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E4%B8%8A%E6%B5%B7%E5%80%A1%E8%AE%AE%E5%81%9A%E5%A5%BD14%E5%A4%A9%E7%89%A9%E8%B5%84%E5%82%A8%E5%A4%87%3F%E5%B1%85%E5%A7%94%E5%9B%9E%E5%BA%94&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;“躲在虹桥卫生间”的阿芬找到工作&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4861235&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E2%80%9C%E8%BA%B2%E5%9C%A8%E8%99%B9%E6%A1%A5%E5%8D%AB%E7%94%9F%E9%97%B4%E2%80%9D%E7%9A%84%E9%98%BF%E8%8A%AC%E6%89%BE%E5%88%B0%E5%B7%A5%E4%BD%9C&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;中国新建建筑“绿色化”已超90%&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4795672&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E6%96%B0%E5%BB%BA%E5%BB%BA%E7%AD%91%E2%80%9C%E7%BB%BF%E8%89%B2%E5%8C%96%E2%80%9D%E5%B7%B2%E8%B6%8590%25&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;油价下调 加满一箱油少花14元&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4636801&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E6%B2%B9%E4%BB%B7%E4%B8%8B%E8%B0%83+%E5%8A%A0%E6%BB%A1%E4%B8%80%E7%AE%B1%E6%B2%B9%E5%B0%91%E8%8A%B114%E5%85%83&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1欧元=1美元&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4519508&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=1%E6%AC%A7%E5%85%83%3D1%E7%BE%8E%E5%85%83&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;放开放宽除个别超大城市外落户限制&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4466971&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E6%94%BE%E5%BC%80%E6%94%BE%E5%AE%BD%E9%99%A4%E4%B8%AA%E5%88%AB%E8%B6%85%E5%A4%A7%E5%9F%8E%E5%B8%82%E5%A4%96%E8%90%BD%E6%88%B7%E9%99%90%E5%88%B6&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;外交部回应斯里兰卡涉华债务&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4349934&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E5%A4%96%E4%BA%A4%E9%83%A8%E5%9B%9E%E5%BA%94%E6%96%AF%E9%87%8C%E5%85%B0%E5%8D%A1%E6%B6%89%E5%8D%8E%E5%80%BA%E5%8A%A1&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;非洲狮在杭州热成了“狗”&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4262988&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E9%9D%9E%E6%B4%B2%E7%8B%AE%E5%9C%A8%E6%9D%AD%E5%B7%9E%E7%83%AD%E6%88%90%E4%BA%86%E2%80%9C%E7%8B%97%E2%80%9D&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;“历史有阳”不得观剧？剧院道歉&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4190602&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E2%80%9C%E5%8E%86%E5%8F%B2%E6%9C%89%E9%98%B3%E2%80%9D%E4%B8%8D%E5%BE%97%E8%A7%82%E5%89%A7%EF%BC%9F%E5%89%A7%E9%99%A2%E9%81%93%E6%AD%89&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;卖保健品的干儿子把大伯备注为仆人&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4004801&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E5%8D%96%E4%BF%9D%E5%81%A5%E5%93%81%E7%9A%84%E5%B9%B2%E5%84%BF%E5%AD%90%E6%8A%8A%E5%A4%A7%E4%BC%AF%E5%A4%87%E6%B3%A8%E4%B8%BA%E4%BB%86%E4%BA%BA&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;洪世贤艾莉离婚12年了&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3907861&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E6%B4%AA%E4%B8%96%E8%B4%A4%E8%89%BE%E8%8E%89%E7%A6%BB%E5%A9%9A12%E5%B9%B4%E4%BA%86&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;乐视员工过着“无老板”的神仙日子&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3899689&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E4%B9%90%E8%A7%86%E5%91%98%E5%B7%A5%E8%BF%87%E7%9D%80%E2%80%9C%E6%97%A0%E8%80%81%E6%9D%BF%E2%80%9D%E7%9A%84%E7%A5%9E%E4%BB%99%E6%97%A5%E5%AD%90&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;主持人直播突然流鼻血仍淡定播报&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3700359&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E4%B8%BB%E6%8C%81%E4%BA%BA%E7%9B%B4%E6%92%AD%E7%AA%81%E7%84%B6%E6%B5%81%E9%BC%BB%E8%A1%80%E4%BB%8D%E6%B7%A1%E5%AE%9A%E6%92%AD%E6%8A%A5&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;妻子接手亡夫工厂1年还债110万&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3684924&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E5%A6%BB%E5%AD%90%E6%8E%A5%E6%89%8B%E4%BA%A1%E5%A4%AB%E5%B7%A5%E5%8E%821%E5%B9%B4%E8%BF%98%E5%80%BA110%E4%B8%87&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;发改委：不得新建500米以上建筑&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3535470&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E5%8F%91%E6%94%B9%E5%A7%94%EF%BC%9A%E4%B8%8D%E5%BE%97%E6%96%B0%E5%BB%BA500%E7%B1%B3%E4%BB%A5%E4%B8%8A%E5%BB%BA%E7%AD%91&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;重庆一文物纪念馆房顶被晒塌了&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3436046&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E9%87%8D%E5%BA%86%E4%B8%80%E6%96%87%E7%89%A9%E7%BA%AA%E5%BF%B5%E9%A6%86%E6%88%BF%E9%A1%B6%E8%A2%AB%E6%99%92%E5%A1%8C%E4%BA%86&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;新东方辞退拒调岗员工被判赔38万&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3346382&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E6%96%B0%E4%B8%9C%E6%96%B9%E8%BE%9E%E9%80%80%E6%8B%92%E8%B0%83%E5%B2%97%E5%91%98%E5%B7%A5%E8%A2%AB%E5%88%A4%E8%B5%9438%E4%B8%87&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;被保姆遗留电梯坠亡女童已安葬&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3280863&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E8%A2%AB%E4%BF%9D%E5%A7%86%E9%81%97%E7%95%99%E7%94%B5%E6%A2%AF%E5%9D%A0%E4%BA%A1%E5%A5%B3%E7%AB%A5%E5%B7%B2%E5%AE%89%E8%91%AC&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;约翰逊宣布辞职后首次公开露面&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3178318&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%AE%A3%E5%B8%83%E8%BE%9E%E8%81%8C%E5%90%8E%E9%A6%96%E6%AC%A1%E5%85%AC%E5%BC%80%E9%9C%B2%E9%9D%A2&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;雨衣男强拽母女后潜逃多日 细节通报&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3023029&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E9%9B%A8%E8%A1%A3%E7%94%B7%E5%BC%BA%E6%8B%BD%E6%AF%8D%E5%A5%B3%E5%90%8E%E6%BD%9C%E9%80%83%E5%A4%9A%E6%97%A5+%E7%BB%86%E8%8A%82%E9%80%9A%E6%8A%A5&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;警方初判雨衣男涉强奸非法侵入住宅&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2982454&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E8%AD%A6%E6%96%B9%E5%88%9D%E5%88%A4%E9%9B%A8%E8%A1%A3%E7%94%B7%E6%B6%89%E5%BC%BA%E5%A5%B8%E9%9D%9E%E6%B3%95%E4%BE%B5%E5%85%A5%E4%BD%8F%E5%AE%85&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;男子偷女友2支新口红送女网友&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2854274&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E7%94%B7%E5%AD%90%E5%81%B7%E5%A5%B3%E5%8F%8B2%E6%94%AF%E6%96%B0%E5%8F%A3%E7%BA%A2%E9%80%81%E5%A5%B3%E7%BD%91%E5%8F%8B&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;女子火车上遭猥亵装睡冷静取证&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2711005&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E5%A5%B3%E5%AD%90%E7%81%AB%E8%BD%A6%E4%B8%8A%E9%81%AD%E7%8C%A5%E4%BA%B5%E8%A3%85%E7%9D%A1%E5%86%B7%E9%9D%99%E5%8F%96%E8%AF%81&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;罗永浩：拿火烤钟薛高精神有问题&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2692136&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E7%BD%97%E6%B0%B8%E6%B5%A9%EF%BC%9A%E6%8B%BF%E7%81%AB%E7%83%A4%E9%92%9F%E8%96%9B%E9%AB%98%E7%B2%BE%E7%A5%9E%E6%9C%89%E9%97%AE%E9%A2%98&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;三胞胎高考考出等差数列&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2547350&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E4%B8%89%E8%83%9E%E8%83%8E%E9%AB%98%E8%80%83%E8%80%83%E5%87%BA%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;上海交大新生入学可互选室友&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2443336&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E4%B8%8A%E6%B5%B7%E4%BA%A4%E5%A4%A7%E6%96%B0%E7%94%9F%E5%85%A5%E5%AD%A6%E5%8F%AF%E4%BA%92%E9%80%89%E5%AE%A4%E5%8F%8B&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;又一批供应商申请对苏宁易购破产清算&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2361393&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E5%8F%88%E4%B8%80%E6%89%B9%E4%BE%9B%E5%BA%94%E5%95%86%E7%94%B3%E8%AF%B7%E5%AF%B9%E8%8B%8F%E5%AE%81%E6%98%93%E8%B4%AD%E7%A0%B4%E4%BA%A7%E6%B8%85%E7%AE%97&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;韩国公务员偷公厕空调送岳母&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2276632&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E9%9F%A9%E5%9B%BD%E5%85%AC%E5%8A%A1%E5%91%98%E5%81%B7%E5%85%AC%E5%8E%95%E7%A9%BA%E8%B0%83%E9%80%81%E5%B2%B3%E6%AF%8D&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;错换人生28年案二审维持原判&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2127430&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E9%94%99%E6%8D%A2%E4%BA%BA%E7%94%9F28%E5%B9%B4%E6%A1%88%E4%BA%8C%E5%AE%A1%E7%BB%B4%E6%8C%81%E5%8E%9F%E5%88%A4&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;上海对“6·18”爆炸事故提级调查&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2001451&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://www.baidu.com/s?wd=%E4%B8%8A%E6%B5%B7%E5%AF%B9%E2%80%9C6%C2%B718%E2%80%9D%E7%88%86%E7%82%B8%E4%BA%8B%E6%95%85%E6%8F%90%E7%BA%A7%E8%B0%83%E6%9F%A5&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="调用效果"><a href="#调用效果" class="header-anchor">#</a> 调用效果</h2> <p><code>暂无</code></p> <h2 id="请求参数"><a href="#请求参数" class="header-anchor">#</a> 请求参数</h2> <table><thead><tr><th style="text-align:center;">参数名称</th> <th style="text-align:center;">类型</th> <th style="text-align:center;">参数值</th> <th style="text-align:center;">描述</th></tr></thead> <tbody><tr><td style="text-align:center;">暂无</td> <td style="text-align:center;">暂无</td> <td style="text-align:center;">暂无</td> <td style="text-align:center;">暂无</td></tr></tbody></table> <p><ins data-ad-client="ca-pub-1759509770249694" data-ad-slot="5736974812" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle" style="display:block;"></ins></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/old/bilihot.html" class="prev">
+        Bilibili热搜榜获取
+      </a></span> <span class="next"><a href="/old/qrcode.html">
+        二维码生成
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/old/assets/js/app.2810aac4.js" defer></script><script src="/old/assets/js/2.81e6afc7.js" defer></script><script src="/old/assets/js/9.0b9c18c2.js" defer></script><script src="/old/assets/js/3.0e78cc26.js" defer></script><script src="/old/assets/js/7.6a2e1261.js" defer></script>
+  </body>
+</html>
