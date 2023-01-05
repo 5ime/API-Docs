@@ -1,10 +1,9 @@
 {
-  "name": "gh-pages-action-demo",
+  "name": "tenapi-docs",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:LasyIsLazy/gh-pages-action-demo.git",
-  "author": "Lasy <1255352506@qq.com>",
-  "license": "MIT",
+  "repository": "git@github.com:5ime/API-Docs.git",
+  "author": "iami233",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
