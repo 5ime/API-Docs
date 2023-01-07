@@ -24,6 +24,10 @@ curl https://tenapi.cn/v2/songinfo -X POST -d 'id=400162138'
 | --- | --- | --- | --- |
 | id | int | 是 | 网易云歌曲 ID |
 
+## 调用示例
+
+移步: <a href="https://lab.5ime.cn/wyy" target="_blank" rel="noopener noreferrer">https://lab.5ime.cn/wyy</a> 查看
+
 ## 返回数据
 
 ``` json

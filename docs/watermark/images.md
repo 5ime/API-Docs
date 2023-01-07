@@ -28,7 +28,7 @@ curl https://tenapi.cn/v2/images -X POST -d 'url=https://weibo.com/3669102477/Mm
 
 ## 调用示例
 
-移步: <a href="https://lab.5ime.cn/video/" target="_blank" rel="noopener noreferrer">https://lab.5ime.cn/video/</a> 查看
+移步: <a href="https://lab.5ime.cn/video" target="_blank" rel="noopener noreferrer">https://lab.5ime.cn/video</a> 查看
 
 ## 返回数据
 

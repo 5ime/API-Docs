@@ -16,6 +16,10 @@ https://tenapi.cn/v2/comment
 curl https://tenapi.cn/v2/comment
 ```
 
+## 调用示例
+
+移步: <a href="https://lab.5ime.cn/comment" target="_blank" rel="noopener noreferrer">https://lab.5ime.cn/comment</a> 查看
+
 ## 返回数据
 
 ```json
