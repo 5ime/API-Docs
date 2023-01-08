@@ -17,7 +17,7 @@ module.exports = {
                         link: '/',
                     },
                     {
-                        text: 'TenApi',
+                        text: 'TenAPI',
                         link: 'https://tenapi.cn',
                     },
                     {
