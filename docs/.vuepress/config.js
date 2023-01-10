@@ -82,6 +82,7 @@ module.exports = {
                             children: [
                                 'bilibili/userinfo',
                                 'bilibili/videoinfo',
+                                'bilibili/weekly',
                             ],
                         },
                         {
