@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>哔哩哔哩每周必看 | TenAPI 使用文档</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d3b3b1b968a56124689d1366adeacf8f";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();</script>
+    <script data-ad-client="ca-pub-1759509770249694" async="true" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <meta name="description" content="TenAPI 使用文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.6d920bc0.css" as="style"><link rel="preload" href="/assets/js/app.07ff6750.js" as="script"><link rel="preload" href="/assets/js/2.5cb6f360.js" as="script"><link rel="preload" href="/assets/js/11.a4c81a32.js" as="script"><link rel="preload" href="/assets/js/3.7610af84.js" as="script"><link rel="preload" href="/assets/js/6.dd057312.js" as="script"><link rel="prefetch" href="/assets/js/10.67fcbbf1.js"><link rel="prefetch" href="/assets/js/12.2b2b64a7.js"><link rel="prefetch" href="/assets/js/13.42b6156e.js"><link rel="prefetch" href="/assets/js/14.77b3f4d8.js"><link rel="prefetch" href="/assets/js/15.52a78d22.js"><link rel="prefetch" href="/assets/js/16.204a6c72.js"><link rel="prefetch" href="/assets/js/17.e4772e98.js"><link rel="prefetch" href="/assets/js/18.94e639bb.js"><link rel="prefetch" href="/assets/js/19.82b623fe.js"><link rel="prefetch" href="/assets/js/20.7786d27d.js"><link rel="prefetch" href="/assets/js/21.05adfb06.js"><link rel="prefetch" href="/assets/js/22.890d8acb.js"><link rel="prefetch" href="/assets/js/23.67469e27.js"><link rel="prefetch" href="/assets/js/24.38d52396.js"><link rel="prefetch" href="/assets/js/25.8b0854c9.js"><link rel="prefetch" href="/assets/js/26.bca3a54a.js"><link rel="prefetch" href="/assets/js/27.0660d54b.js"><link rel="prefetch" href="/assets/js/28.2db20db5.js"><link rel="prefetch" href="/assets/js/29.3acda9e2.js"><link rel="prefetch" href="/assets/js/30.1aea3273.js"><link rel="prefetch" href="/assets/js/31.8fe0ace9.js"><link rel="prefetch" href="/assets/js/32.5a44b0f2.js"><link rel="prefetch" href="/assets/js/33.fde3dd44.js"><link rel="prefetch" href="/assets/js/34.78732f81.js"><link rel="prefetch" href="/assets/js/35.2fe507aa.js"><link rel="prefetch" href="/assets/js/36.3c960b9c.js"><link rel="prefetch" href="/assets/js/37.8ef28a8b.js"><link rel="prefetch" href="/assets/js/38.e9cd15a4.js"><link rel="prefetch" href="/assets/js/39.24bd93ac.js"><link rel="prefetch" href="/assets/js/4.fb46e34f.js"><link rel="prefetch" href="/assets/js/40.55e8330e.js"><link rel="prefetch" href="/assets/js/41.6b911285.js"><link rel="prefetch" href="/assets/js/42.91020988.js"><link rel="prefetch" href="/assets/js/43.e503fdca.js"><link rel="prefetch" href="/assets/js/44.014354f8.js"><link rel="prefetch" href="/assets/js/45.fd41d949.js"><link rel="prefetch" href="/assets/js/46.2a099395.js"><link rel="prefetch" href="/assets/js/47.abb61e25.js"><link rel="prefetch" href="/assets/js/48.c3e86862.js"><link rel="prefetch" href="/assets/js/49.01886388.js"><link rel="prefetch" href="/assets/js/5.cbd2e0b5.js"><link rel="prefetch" href="/assets/js/7.0b9d2fbe.js"><link rel="prefetch" href="/assets/js/8.e1ed95bd.js"><link rel="prefetch" href="/assets/js/9.5bbfa414.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6d920bc0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container routes"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TenAPI 使用文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="https://tenapi.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  TenAPI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://5ime.cn/guestbook" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  留言反馈
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/support/" class="nav-link">
+  支持 TenAPI
+</a></div> <a href="https://github.com/5ime/API-Docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="https://tenapi.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  TenAPI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://5ime.cn/guestbook" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  留言反馈
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/support/" class="nav-link">
+  支持 TenAPI
+</a></div> <a href="https://github.com/5ime/API-Docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>指南</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>腾讯QQ</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>热点趋势</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>随机输出</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>哔哩哔哩</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bilibili/userinfo.html" class="sidebar-link">哔哩哔哩用户信息</a></li><li><a href="/bilibili/videoinfo.html" class="sidebar-link">哔哩哔哩视频信息</a></li><li><a href="/bilibili/weekly.html" aria-current="page" class="active sidebar-link">哔哩哔哩每周必看</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/bilibili/weekly.html#接口地址" class="sidebar-link">接口地址</a></li><li class="sidebar-sub-header"><a href="/bilibili/weekly.html#请求示例" class="sidebar-link">请求示例</a></li><li class="sidebar-sub-header"><a href="/bilibili/weekly.html#请求参数" class="sidebar-link">请求参数</a></li><li class="sidebar-sub-header"><a href="/bilibili/weekly.html#返回数据" class="sidebar-link">返回数据</a></li><li class="sidebar-sub-header"><a href="/bilibili/weekly.html#返回参数" class="sidebar-link">返回参数</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>图像处理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实用接口</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网易云音乐</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>短视频去水印</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="哔哩哔哩每周必看"><a href="#哔哩哔哩每周必看" class="header-anchor">#</a> 哔哩哔哩每周必看 <span class="badge tip" style="vertical-align:top;" data-v-15b7b770>正常</span></h1> <h2 id="接口地址"><a href="#接口地址" class="header-anchor">#</a> 接口地址</h2> <div class="language- extra-class"><pre class="language-text"><code>https://tenapi.cn/v2/weekly
+</code></pre></div><h2 id="请求示例"><a href="#请求示例" class="header-anchor">#</a> 请求示例</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> https://tenapi.cn/v2/weekly <span class="token parameter variable">-X</span> POST <span class="token parameter variable">-d</span> <span class="token string">'num=187'</span>
+</code></pre></div><h2 id="请求参数"><a href="#请求参数" class="header-anchor">#</a> 请求参数</h2> <table><thead><tr><th>参数名</th> <th>类型</th> <th>必填</th> <th>说明</th></tr></thead> <tbody><tr><td>num</td> <td>int</td> <td>否</td> <td>想要查询的期数, 默认返回最新一期</td></tr></tbody></table> <h2 id="返回数据"><a href="#返回数据" class="header-anchor">#</a> 返回数据</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2022第187期 10.14 - 10.20&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;label&quot;</span><span class="token operator">:</span> <span class="token string">&quot;第187期(1021更新)&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;全球十大自助餐之一！豪华邮轮上吃7天7夜是一种什么体验&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/6ff697a688addd7870ea50e4ff88783eb4335eee.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;什么人能豪吃七天啊？！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1DP411P7om&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;“素材而已，怎么也会让人怀念呢”&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/ab16646bc82297e49ea09dcb00a1532c94a2a095.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;不止怀念素材，更怀念那些鬼畜带来的热血与感动&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1d8411Y7fJ&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;龙族《IVORY TOWER》完整版翻唱&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/23fdbfe11f930ffe42b8b68feee007ee51b38db3.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;“空灵”这个词简直是为UP而生&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1rG411j7u9&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;《one last shake》&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/66da9b30beb8c59652fba247330243398855728e.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;已被卢浮宫收藏（doge&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1He4y1v7tx&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;❤️剪一种很新的东西❤️&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/ba4822633caee00fa56e7a508b8bb70ea5353740.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;全明星但是丝滑版&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV13e4y1S7eq&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;怪奇物语变装&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/155d059377714f694ed9a8cd9a669d7f99c53aad.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;这个变装好，就是有点疼~&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1AK411X7Fn&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;最终篇了！【Miume・MARiA・217】讴歌烂漫【舞见 最终篇！】&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/9a8da819d007bb76293f51174ccbf7a52fc767b8.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;完结撒花，三人一起的舞见系列的最终篇&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1yG4y1n76b&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;“我超喜欢呆在里面的”&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/98f04cfcdda20589d5580b70b1d424c5300651ef.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;《番茄的奇妙冒险：纯狱男孩》&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1AD4y1C721&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;“我肯定在几百年前就做过这题”&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/caa170ebd16e52a548d70aa29d488460267d93ce.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;老汤看了都想举报&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1ve4y1S7W6&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;【(G)I-DLE】[M/V] - 'Nxde'&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/39a344d4af30e7661ca13ca95d63c0f4183535a0.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;女娃出品，必属精品&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1wW4y1n7y3&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;用科学打破次元壁！我终于成为了我梦里的剑客！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/53f0fd886480f6b54973e972b0845bc0104d8206.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;雷刃不是特效，是实拍！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1fg411h7rP&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;不懂英语如何刺探英国情报？【硬核狠人40】&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/d76155b3c9d53787338464aebfd62a469317a3e5.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;硬核狠人之艾丽萨.巴兹纳&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1R44y1f7Yv&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;《打工日记》&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/8169d922b662d16efe024d9379966fb6a8dd2562.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;丁老师和王同学的故事&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1fR4y1X7bx&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;【红颜如霜 | 官方MV 】周杰伦 遇上嘻哈舞团 JABBAWOCKEEZ 就是有新惊喜！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/6490d9110db0999d3032b6da0170883161750d9f.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;中国风韵味x嘻哈舞团，《红颜如霜》MV来啦&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1SR4y1D7wV&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;一只老鼠右脑大半被人类神经细胞占据，这是它的行为和智能发生的变化&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/c632231dee43d41d239a2e6b65343c54598225d7.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;硬核解析突破和争议并存的实验&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1uG4y1n7G3&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;天生绝呸！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/f1b4068f24d7c016574d5032e48a2bbbf6aa3f02.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;这次的游戏《天生绝配》，点击就看默契度挑战&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1ie4y1E7u7&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;当你拍短视频拍着玩却不小心火了&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/fa2f41ef2ee7e1b44d4da2304375dbe7091a47a1.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;火了不可怕，可怕的是身边人发现了&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1gG41177Bj&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;你卡进了后室……但是你速通了它（要素过多注意）&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/e835e3b4076bc2a163308cf1491ab99d813c3282.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;可爱加带感！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1vR4y1X7P2&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;《原神》角色演示-「妮露：莲舞纤姿」&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/a958f076d18548de6384bf46dc2300e45de027bb.png&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小妮露来咯~&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1AP411E773&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;逐帧绘制1992年版《莉可丽丝》，目前AI绘画也无法实现的技术力！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/aef8bb520a67a1b6db5c1306b35ef9dcd7e355c4.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;90年代画风完美复刻&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1AP411E7jM&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;健什么身，来攻沙啊&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/1b996ec6928c5e6530c0c863b8d0f2c74330fadc.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;现在！立刻！马上！来挖矿！攻沙！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1yK411S7Qq&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;起床战争&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/001430833f5b6d0863fbafa8c2bd80c756f77614.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;好消息，老番茄和小潮一起更新了！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1oe4y1Y7n5&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;老公过年过节回娘家无聊时的那副德行&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/8b34290ff40aef19cdebd59a2b2febae84c1ec97.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;这真的不是本色出演吗！？&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV12P411P7am&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TES饭堂实力还是在的，可惜遇上了这个霉比【还愿挑战ep15-滔搏食堂】&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/25bd176b47a227073fd58e88d313e0d03cf96f4d.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;王师傅负全责吗&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1be411V7nH&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;【C菌】彻底超出了人类认知的另类恐怖游戏《Scorn/蔑视》实况合集｜第一集&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/9631cefa4249bb22363b781f1599e1daf1e7581d.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小众恐怖游戏实况新坑开启！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV12N4y1c72L&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;刘庸时隔一年喝芦荟汁，再次见到新小子，感慨万千&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/12ff1b7466cea98d84ce560cb945b319be80f165.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;怎么做到的一口闷？！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1Tm4y1w7Ck&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;【STN快报6.5季09】老黄翻车，4090无法驾驭的游戏出现&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/c12ebed481071c182c83cd7459742c7ad39cec2a.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;啥？还有游戏4090跑不动？&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV12e4y1m76B&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;iQOO Neo7×周深《超级玩家》，再听亿遍！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/2a8e0d749e6326b47410ccccba5cb85e89b1e314.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;iQOO X 周深的视听盛宴&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1Jm4y1w71r&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;对话河北首富&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/126b8254b74bdc75da8dc0ff22f21f5953f4e326.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;唐哥和花少北梦幻联动&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1X44y1f7NE&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;【丧病中配】如果2077的CV来配音《赛博朋克：边缘行者》（第三话）&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/60fdeaf189fe651c29529aa1712bc626e08fa356.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;真的很甜，一点都不刀！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1A84y1z7jh&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;诺奖得主：我的工作强度从未达到996丨对话诺奖得主！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/a18fd9c26d66fd024abfd53e0d34fe02a2545d9e.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Zhan与诺奖获得者的对话实录&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1p8411s7ow&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小城市让人绝望的文娱生活！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/fb48ca4215752418c9ccd8bc57b0e79f1a2b14f0.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;马戏团的落幕&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1xR4y1X7wj&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;《崩坏3》全新SP角色爱衣·休伯利安Λ「时帆旅人」预告&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/6f0a96db1ffa063ce2d68df40e83029ef43fff64.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;期待新角色！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1GG41177xi&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;把200斤的男友打扮成我理想的帅哥，真的太不容易了！！！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/55faafa58e62a720c487d589d23472ee255e5518.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;说好的190怎么又变成200了&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1te4y1S7eW&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;【阿斗】最羞辱的死法，上厕所被儿子射杀！美剧史诗巨作《权力的游戏》第15期&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/e6e999155c18d62c31aa32f6b49be84750d0ea24.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;《权力的游戏》爆肝解析&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1we4y1i7xi&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;【Faye詹雯婷x张远】跟着《诀爱》再回这个热烈的夏天吧~&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/933f4c693c68d4bc1c02207eaaf38cb56ebc5158.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;这一版《诀爱》太好听了！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1CR4y1R76K&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;《 加 州 电 竞 旅 馆 》&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/d447e86656f2856841e670855cd3595a1cd52bd6.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;耳机试听神曲，耳机积灰的快来收藏&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1Fe4y1e7be&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;这是我见过最为诡异，无法形容的游戏！（蔑视）〖游戏不止〗&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/0ad5f39beb5548186df19f80db3aa396307b4d30.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;来感受《蔑视》表达的蔑视&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1we411L7fC&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;据说这才是正确的吃鱼方法？做完之后我直呼离谱到家！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/ec8e385cda73ef53242a04c89a90b08b44c495c5.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;隔着屏幕我感受到了刀鱼的鲜美&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1Rm4y1A71t&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;羊顿-羊子力学&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/e9a9a8e253f67c5a6cabe904f017b745ef037d46.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小羊同款极地登山靴双十一会打折吗（doge&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1M14y1E7jv&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;呱&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/85d0ec2ccb64f46349ac4e7f379a44da8b19664e.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;谁不想看女朋友在线跳舞呢？&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1Hd4y117qy&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;我说timing啊! 懂不懂中文啊！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/6679ae1dd07620ec0f71fe39ed0e79d5a4f276b3.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;timing即将被新华字典收录（不是&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1ye4y1E7si&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;在宝宝身上放个摄像头后，发现他内心戏很足&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/972c64f2f3b0fe29c45179d32882938581f567d7.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;沉浸式当娃&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1ue4y1J773&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;易梦玲的家！第一次大公开？&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/e4bbb9cce46c24a8f9b2e360cc146fd241dd444c.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;梦玲的爱用好物大揭秘~&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1eG411772x&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;我们用三张4090点亮了五个8K电视！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i0.hdslb.com/bfs/archive/a367d4942b29e7f8b9b8b674eca0adf63a187b50.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;《 科 技 与 狠 活 》&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1VR4y1X7gt&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TES复活夺冠？有我三分之一功劳！【慧小媛】&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/2804fd323e067c72f6610e19eba7bb6502f100a9.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;小媛姐是懂整活的&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1Z8411Y78d&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;什么叫身在地狱，我就是地狱！ 来一个赛博白骨精&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/32a86db40441038c2cb3565f502ef40e54aee47e.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;万圣节妆容这不就安排上了吗&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1qN4y1A76j&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Call Me Maybe之后她去哪了？蹲妹Carly Rae Jepsen生涯全回顾：流行金曲、乐评神专，我全都要！&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i1.hdslb.com/bfs/archive/3680221805a504e2b2bc3af9a2c69baa9c1084b0.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;蹲妹音乐生涯大盘点&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1YP411N7Jk&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;生活在沙漠里面是一种什么样的体验？&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/b8b39c86a80c0de477e8b1638a87682382f27b4d.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;疆域阿力木沙漠行vlog&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1zV4y1V7E2&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;“我是如此相信 爱情至死不渝”&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;cover&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://i2.hdslb.com/bfs/archive/c32c21edaa3ba2f2d5136ce2edc7a0a983fc5b16.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;reason&quot;</span><span class="token operator">:</span> <span class="token string">&quot;在番剧里抓住爱情的影子&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://b23.tv/BV1DD4y1k7Eb&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="返回参数"><a href="#返回参数" class="header-anchor">#</a> 返回参数</h2> <table><thead><tr><th>参数名</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>name</td> <td>string</td> <td>每周必看名称</td></tr> <tr><td>cover</td> <td>string</td> <td>每周必看副标题</td></tr> <tr><td>list</td> <td>array</td> <td>视频列表</td></tr> <tr><td>list.title</td> <td>string</td> <td>视频标题</td></tr> <tr><td>list.cover</td> <td>string</td> <td>视频封面</td></tr> <tr><td>list.reason</td> <td>string</td> <td>视频推荐理由</td></tr> <tr><td>list.url</td> <td>string</td> <td>视频链接</td></tr></tbody></table> <p><ins data-ad-client="ca-pub-1759509770249694" data-ad-slot="5736974812" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle" style="display:block;"></ins></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/5ime/API-Docs/edit/master/docs/bilibili/weekly.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/bilibili/videoinfo.html" class="prev">
+        哔哩哔哩视频信息
+      </a></span> <span class="next"><a href="/drawing/ipinfo.html">
+        IP签名档
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.07ff6750.js" defer></script><script src="/assets/js/2.5cb6f360.js" defer></script><script src="/assets/js/11.a4c81a32.js" defer></script><script src="/assets/js/3.7610af84.js" defer></script><script src="/assets/js/6.dd057312.js" defer></script>
+  </body>
+</html>
