@@ -104,6 +104,7 @@ module.exports = {
                                 'utility/getip',
                                 'utility/shroturl',
                                 'utility/weather',
+                                'utility/nuisance',
                                 'utility/bing',
                                 'utility/history',
                                 'utility/lanzou',
