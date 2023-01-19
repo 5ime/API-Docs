@@ -34,7 +34,7 @@ module.exports = {
                         {
                             title: '指南',
                             collapsable: true,
-                            children: [''],
+                            children: ['','update'],
                         },
                         {
                             title: '腾讯QQ',

@@ -13,7 +13,7 @@ sidebarDepth: 0
 ```
 **原接口地址将于2023年4月1日停止服务。**
 
-近期对全站进行了维护, 具体维护内容请查看 [更新日志](https://5ime.cn/tenapi-update.html)
+维护内容请查看 [更新日志](https://docs.tenapi.cn/update.html)
 
 旧版文档地址：[https://docs.tenapi.cn/old](https://docs.tenapi.cn/old/)
 :::
