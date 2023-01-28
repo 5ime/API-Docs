@@ -1,4 +1,6 @@
-## 更新日志
+# 更新日志
+
+2023年1月28日 新增[火山小视频去水印](https://docs.tenapi.cn/watermark/video.html)
 
 2023年1月19日 新增[西瓜视频去水印](https://docs.tenapi.cn/watermark/video.html)
 
