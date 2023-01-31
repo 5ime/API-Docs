@@ -5,7 +5,7 @@ pageClass: routes
 # 聚合短视频去水印 <Badge text="正常" type="tip"/>
 
 ::: tip
-支持列表: 皮皮虾, 抖音, 微视, 快手, 6间房, 哔哩哔哩, 微博, 绿洲, 度小视, 开眼, 陌陌, 皮皮搞笑, 全民k歌, 逗拍, 虎牙, 新片场, 哔哩哔哩, Acfun, 美拍, 西瓜视频, 火山小视频
+支持列表: 皮皮虾, 抖音, 微视, 快手, 6间房, 哔哩哔哩, 微博, 绿洲, 度小视, 开眼, 陌陌, 皮皮搞笑, 全民k歌, 逗拍, 虎牙, 新片场, 哔哩哔哩, Acfun, 美拍, 西瓜视频, 火山小视频, 网易云Mlog
 :::
 
 ## 接口地址
@@ -15,6 +15,8 @@ https://tenapi.cn/v2/video
 ```
 
 ## 请求示例
+
+> 建议请求前进行 `urlencode` 处理
 
 ``` bash
 curl https://tenapi.cn/v2/video -X POST -d 'url=https://v.douyin.com/6BEYVNs'

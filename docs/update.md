@@ -1,5 +1,9 @@
 # 更新日志
 
+2023年1月31日 新增[网易云Mlog去水印](https://docs.tenapi.cn/watermark/video.html)
+
+2023年1月30日 新增[皮皮搞笑图集去水印](https://docs.tenapi.cn/watermark/images.html), 修复[抖音短视频图集去水印](https://docs.tenapi.cn/watermark/images.html)
+
 2023年1月28日 新增[火山小视频去水印](https://docs.tenapi.cn/watermark/video.html)
 
 2023年1月19日 新增[西瓜视频去水印](https://docs.tenapi.cn/watermark/video.html)
