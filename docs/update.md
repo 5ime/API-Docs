@@ -1,5 +1,7 @@
 # 更新日志
 
+2023年2月05日 修复[QQ空间信息](https://docs.tenapi.cn/tencent/qzone.html), [QQ匿名头像](https://docs.tenapi.cn/tencent/anon-avatar.html)
+
 2023年1月31日 新增[网易云Mlog去水印](https://docs.tenapi.cn/watermark/video.html)
 
 2023年1月30日 新增[皮皮搞笑图集去水印](https://docs.tenapi.cn/watermark/images.html), 修复[抖音短视频图集去水印](https://docs.tenapi.cn/watermark/images.html)
