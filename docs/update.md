@@ -1,6 +1,6 @@
 # 更新日志
 
-2023年2月05日 新增[好看视频去水印](https://docs.tenapi.cn/watermark/video.html), 修复[西瓜视频去水印](https://docs.tenapi.cn/watermark/video.html), [6间房去水印](https://docs.tenapi.cn/watermark/video.html), [虎牙去水印](https://docs.tenapi.cn/watermark/video.html), 同时适配抖音, 6间房, 虎牙多个域名格式
+2023年2月20日 新增[好看视频去水印](https://docs.tenapi.cn/watermark/video.html), 修复[西瓜视频去水印](https://docs.tenapi.cn/watermark/video.html), [6间房去水印](https://docs.tenapi.cn/watermark/video.html), [虎牙去水印](https://docs.tenapi.cn/watermark/video.html), 同时适配抖音, 6间房, 虎牙多个域名格式
 
 2023年2月05日 修复[QQ空间信息](https://docs.tenapi.cn/tencent/qzone.html), [QQ匿名头像](https://docs.tenapi.cn/tencent/anon-avatar.html)
 
