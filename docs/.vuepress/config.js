@@ -86,6 +86,14 @@ module.exports = {
                             ],
                         },
                         {
+                            title: '新浪微博',
+                            collapsable: true,
+                            sidebarDepth: 1,
+                            children: [
+                                'weibo/userinfo',
+                            ],
+                        },
+                        {
                             title: '图像处理',
                             collapsable: true,
                             sidebarDepth: 1,
