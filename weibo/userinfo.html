@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微博用户信息 | TenAPI 使用文档</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d3b3b1b968a56124689d1366adeacf8f";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();</script>
+    <script data-ad-client="ca-pub-1759509770249694" async="true" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <meta name="description" content="TenAPI 使用文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.878647fa.css" as="style"><link rel="preload" href="/assets/js/app.27671fd7.js" as="script"><link rel="preload" href="/assets/js/2.6b092d03.js" as="script"><link rel="preload" href="/assets/js/52.05aa1b9a.js" as="script"><link rel="preload" href="/assets/js/3.29d22575.js" as="script"><link rel="preload" href="/assets/js/6.ccbd8b20.js" as="script"><link rel="prefetch" href="/assets/js/10.b18fdfb7.js"><link rel="prefetch" href="/assets/js/11.e2b8cbcd.js"><link rel="prefetch" href="/assets/js/12.99b21674.js"><link rel="prefetch" href="/assets/js/13.93962de5.js"><link rel="prefetch" href="/assets/js/14.5584eb5b.js"><link rel="prefetch" href="/assets/js/15.58f40daf.js"><link rel="prefetch" href="/assets/js/16.42b1f275.js"><link rel="prefetch" href="/assets/js/17.bc1b0764.js"><link rel="prefetch" href="/assets/js/18.412ead4f.js"><link rel="prefetch" href="/assets/js/19.f0ddc5a6.js"><link rel="prefetch" href="/assets/js/20.aed0ae43.js"><link rel="prefetch" href="/assets/js/21.5ea1d535.js"><link rel="prefetch" href="/assets/js/22.5911969e.js"><link rel="prefetch" href="/assets/js/23.e293fd96.js"><link rel="prefetch" href="/assets/js/24.8a0785a5.js"><link rel="prefetch" href="/assets/js/25.2550c07b.js"><link rel="prefetch" href="/assets/js/26.cb42246e.js"><link rel="prefetch" href="/assets/js/27.45a0bcf4.js"><link rel="prefetch" href="/assets/js/28.0f3216aa.js"><link rel="prefetch" href="/assets/js/29.4e0840a3.js"><link rel="prefetch" href="/assets/js/30.f2841c06.js"><link rel="prefetch" href="/assets/js/31.1a074fdb.js"><link rel="prefetch" href="/assets/js/32.d35bdc51.js"><link rel="prefetch" href="/assets/js/33.e8339413.js"><link rel="prefetch" href="/assets/js/34.97597e72.js"><link rel="prefetch" href="/assets/js/35.686cdd98.js"><link rel="prefetch" href="/assets/js/36.021a1103.js"><link rel="prefetch" href="/assets/js/37.914f2ed1.js"><link rel="prefetch" href="/assets/js/38.8e7c1d50.js"><link rel="prefetch" href="/assets/js/39.b8983772.js"><link rel="prefetch" href="/assets/js/4.c071dc16.js"><link rel="prefetch" href="/assets/js/40.74e8cbda.js"><link rel="prefetch" href="/assets/js/41.e96a24ef.js"><link rel="prefetch" href="/assets/js/42.8673a79d.js"><link rel="prefetch" href="/assets/js/43.9f7a34c6.js"><link rel="prefetch" href="/assets/js/44.0adcf303.js"><link rel="prefetch" href="/assets/js/45.9ccb7acc.js"><link rel="prefetch" href="/assets/js/46.97cfbf37.js"><link rel="prefetch" href="/assets/js/47.367caa7b.js"><link rel="prefetch" href="/assets/js/48.c7ed2d1c.js"><link rel="prefetch" href="/assets/js/49.0c74a193.js"><link rel="prefetch" href="/assets/js/5.0489b83e.js"><link rel="prefetch" href="/assets/js/50.9f4a2e80.js"><link rel="prefetch" href="/assets/js/51.f46c54fb.js"><link rel="prefetch" href="/assets/js/7.91a26545.js"><link rel="prefetch" href="/assets/js/8.eeb1732f.js"><link rel="prefetch" href="/assets/js/9.8f0c49be.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.878647fa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container routes"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TenAPI 使用文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="https://tenapi.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  TenAPI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://5ime.cn/guestbook" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  留言反馈
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/support/" class="nav-link">
+  支持 TenAPI
+</a></div> <a href="https://github.com/5ime/API-Docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="https://tenapi.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  TenAPI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://5ime.cn/guestbook" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  留言反馈
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/support/" class="nav-link">
+  支持 TenAPI
+</a></div> <a href="https://github.com/5ime/API-Docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>指南</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>腾讯QQ</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>热点趋势</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>随机输出</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>哔哩哔哩</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>新浪微博</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/weibo/userinfo.html" aria-current="page" class="active sidebar-link">微博用户信息</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/weibo/userinfo.html#接口地址" class="sidebar-link">接口地址</a></li><li class="sidebar-sub-header"><a href="/weibo/userinfo.html#请求示例" class="sidebar-link">请求示例</a></li><li class="sidebar-sub-header"><a href="/weibo/userinfo.html#请求参数" class="sidebar-link">请求参数</a></li><li class="sidebar-sub-header"><a href="/weibo/userinfo.html#返回数据" class="sidebar-link">返回数据</a></li><li class="sidebar-sub-header"><a href="/weibo/userinfo.html#返回参数" class="sidebar-link">返回参数</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>图像处理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实用接口</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网易云音乐</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>短视频去水印</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="微博用户信息"><a href="#微博用户信息" class="header-anchor">#</a> 微博用户信息 <span class="badge tip" style="vertical-align:top;" data-v-15b7b770>正常</span></h1> <h2 id="接口地址"><a href="#接口地址" class="header-anchor">#</a> 接口地址</h2> <div class="language- extra-class"><pre class="language-text"><code>https://tenapi.cn/v2/myweibo
+</code></pre></div><h2 id="请求示例"><a href="#请求示例" class="header-anchor">#</a> 请求示例</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> https://tenapi.cn/v2/myweibo <span class="token parameter variable">-X</span> POST <span class="token parameter variable">-d</span> <span class="token string">'uid=1111681197'</span>
+</code></pre></div><h2 id="请求参数"><a href="#请求参数" class="header-anchor">#</a> 请求参数</h2> <blockquote><p>标红部分即为用户 ID<br>https://weibo.com/<span style="color:#E53333;">1111681197</span></p></blockquote> <table><thead><tr><th>参数名</th> <th>类型</th> <th>必填</th> <th>说明</th></tr></thead> <tbody><tr><td>uid</td> <td>int</td> <td>是</td> <td>微博用户 ID</td></tr></tbody></table> <h2 id="返回数据"><a href="#返回数据" class="header-anchor">#</a> 返回数据</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;uid&quot;</span><span class="token operator">:</span> <span class="token number">1111681197</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;来去之间&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;desc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;本社区居委会王大伯&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;avatar&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://tvax1.sinaimg.cn/crop.0.0.1005.1005.180/4242e8adly8h8v5oisct4j20rx0rxgny.jpg?KID=imgbed,tva&amp;Expires=1677681282&amp;ssig=G9f9%2B99Jwq&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;follow&quot;</span><span class="token operator">:</span> <span class="token number">5816</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;fans&quot;</span><span class="token operator">:</span> <span class="token string">&quot;105.3万&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;verify&quot;</span><span class="token operator">:</span> <span class="token string">&quot;移动互联网分析师&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;regtime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2009-08-28&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;credit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;信用极好&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sex&quot;</span><span class="token operator">:</span> <span class="token string">&quot;男&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;birthday&quot;</span><span class="token operator">:</span> <span class="token string">&quot;金牛座&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ip&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;home&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;company&quot;</span><span class="token operator">:</span> <span class="token string">&quot;四通利方&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sign&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;city&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;去过的城市、国家·61个&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;742次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2-21&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;延边朝鲜族自治州&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1-29&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;哈尔滨&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1-27&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;location&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;去过的地点·400个&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;list&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京市出入境管理局&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2-21&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;雪乡国家森林公园-双峰林场&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1-29&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;冰雪大世界&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1-27&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;索菲亚广场&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1-26&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;澳门teamLab超自然空间&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1-22&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;珠海长隆海洋王国-缤纷世界&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1-17&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;新浪总部大厦&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;67次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-12-15&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;中粮·祥云小镇&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-10-27&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京迈基诺基因科技股份有限公司医学检验所核酸采样点&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-10-5&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;启皓北京&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-9-29&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;中国国际展览中心顺义新馆&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-9-11&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京王府中西医结合医院&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-9-10&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京电视台&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-8-15&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京广播电视台&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-8-14&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;日月潭风景区&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-8-7&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;老诚一锅&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-7-26&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;昆明长水国际机场&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-7-23&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;腾冲和顺柏联精品酒店&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-7-22&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;北京雁栖酒店&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-7-9&quot;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;中粮·祥云小镇&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;count&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1次&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;lasttime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;22-7-2&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="返回参数"><a href="#返回参数" class="header-anchor">#</a> 返回参数</h2> <table><thead><tr><th>参数名</th> <th>类型</th> <th>说明</th></tr></thead> <tbody><tr><td>uid</td> <td>int</td> <td>用户 ID</td></tr> <tr><td>name</td> <td>string</td> <td>用户昵称</td></tr> <tr><td>desc</td> <td>string</td> <td>用户简介</td></tr> <tr><td>avatar</td> <td>string</td> <td>用户头像</td></tr> <tr><td>follow</td> <td>int</td> <td>关注数</td></tr> <tr><td>fans</td> <td>string</td> <td>粉丝数</td></tr> <tr><td>verify</td> <td>string</td> <td>认证信息</td></tr> <tr><td>regtime</td> <td>string</td> <td>注册时间</td></tr> <tr><td>credit</td> <td>string</td> <td>信用等级</td></tr> <tr><td>sex</td> <td>string</td> <td>性别</td></tr> <tr><td>birthday</td> <td>string</td> <td>生日</td></tr> <tr><td>location</td> <td>string</td> <td>所在地</td></tr> <tr><td>ip</td> <td>string</td> <td>IP 归属地</td></tr> <tr><td>home</td> <td>string</td> <td>家乡</td></tr> <tr><td>company</td> <td>string</td> <td>公司</td></tr> <tr><td>sign</td> <td>object</td> <td>签到信息</td></tr> <tr><td>sign.city</td> <td>object</td> <td>城市签到信息</td></tr> <tr><td>sign.city.count</td> <td>string</td> <td>签到城市数</td></tr> <tr><td>sign.city.list</td> <td>array</td> <td>签到城市列表</td></tr> <tr><td>sign.city.list.title</td> <td>string</td> <td>签到城市名称</td></tr> <tr><td>sign.city.list.count</td> <td>string</td> <td>签到次数</td></tr> <tr><td>sign.city.list.lasttime</td> <td>string</td> <td>最后签到时间</td></tr> <tr><td>sign.location</td> <td>object</td> <td>地点签到信息</td></tr> <tr><td>sign.location.count</td> <td>string</td> <td>签到地点数</td></tr> <tr><td>sign.location.list</td> <td>array</td> <td>签到地点列表</td></tr> <tr><td>sign.location.list.title</td> <td>string</td> <td>签到地点名称</td></tr> <tr><td>sign.location.list.count</td> <td>string</td> <td>签到次数</td></tr> <tr><td>sign.location.list.lasttime</td> <td>string</td> <td>最后签到时间</td></tr></tbody></table> <p><ins data-ad-client="ca-pub-1759509770249694" data-ad-slot="5736974812" data-ad-format="auto" data-full-width-responsive="true" class="adsbygoogle" style="display:block;"></ins></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/5ime/API-Docs/edit/master/docs/weibo/userinfo.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/bilibili/weekly.html" class="prev">
+        哔哩哔哩每周必看
+      </a></span> <span class="next"><a href="/drawing/ipinfo.html">
+        IP签名档
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.27671fd7.js" defer></script><script src="/assets/js/2.6b092d03.js" defer></script><script src="/assets/js/52.05aa1b9a.js" defer></script><script src="/assets/js/3.29d22575.js" defer></script><script src="/assets/js/6.ccbd8b20.js" defer></script>
+  </body>
+</html>
