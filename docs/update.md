@@ -1,5 +1,7 @@
 # 更新日志
 
+2023年3月10日 修复[西瓜短视频去水印](https://docs.tenapi.cn/watermark/video.html), 修复[微视短视频去水印](https://docs.tenapi.cn/watermark/video.html)
+
 2023年3月04日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html), 修复[抖音短视频图集去水印](https://docs.tenapi.cn/watermark/images.html), 同时适配抖音多个域名格式
 
 2023年3月01日 新增[微博用户信息](https://docs.tenapi.cn/weibo/userinfo.html)
