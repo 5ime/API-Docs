@@ -2,7 +2,7 @@
 pageClass: routes
 ---
 
-# 天气预报查询 <Badge text="正常" type="tip"/>
+# 天气预报查询 <Badge text="维护" type="warning"/>
 
 ## 接口地址
 
