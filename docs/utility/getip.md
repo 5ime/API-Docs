@@ -34,7 +34,9 @@ curl https://tenapi.cn/v2/getip -X POST -d 'ip=47.113.220.205'
     "province": "广东",
     "city": "深圳市",
     "area": "中国广东深圳市 阿里云",
-    "isp": ""
+    "isp": "",
+    "os": "Windows 10",
+    "browser": "Chrome(111.0.0.0)"
   }
 }
 ```
@@ -49,5 +51,7 @@ curl https://tenapi.cn/v2/getip -X POST -d 'ip=47.113.220.205'
 | city | string | 城市 |
 | area | string | 地区 |
 | isp | string | 运营商 |
+| os | string | 请求用户的操作系统 |
+| browser | string | 请求用户的浏览器 |
 
 <ads></ads>
