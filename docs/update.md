@@ -1,5 +1,7 @@
 # 更新日志
 
+2023年05月06日 修复[手机号归属地查询](https://docs.tenapi.cn/utility/phone.html)
+
 2023年05月04日 修复[微视短视频去水印](https://docs.tenapi.cn/watermark/video.html)，同时适配新域名格式
 
 2023年04月04日 增加[用户IP信息](https://docs.tenapi.cn/utility/getip.html)返回字段
