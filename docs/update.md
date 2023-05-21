@@ -1,5 +1,7 @@
 # 更新日志
 
+2023年05月21日 修复[快手短视频去水印](https://docs.tenapi.cn/watermark/video.html)，修复[快手短视频图集去水印](https://docs.tenapi.cn/watermark/images.html)
+
 2023年05月18日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)
 
 2023年05月06日 修复[手机号归属地查询](https://docs.tenapi.cn/utility/phone.html)
