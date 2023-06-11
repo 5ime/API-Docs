@@ -1,5 +1,7 @@
 # 更新日志
 
+2023年06月11日 修复[皮皮虾去水印](https://docs.tenapi.cn/watermark/video.html)，支持帖内视频下载
+
 2023年06月05日 新增[QQ小世界去水印](https://docs.tenapi.cn/watermark/video.html)
 
 2023年05月21日 修复[快手短视频去水印](https://docs.tenapi.cn/watermark/video.html)，修复[快手短视频图集去水印](https://docs.tenapi.cn/watermark/images.html)
