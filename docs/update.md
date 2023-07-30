@@ -1,5 +1,7 @@
 # 更新日志
 
+2023年07月20日 修复[QQ空间信息](https://docs.tenapi.cn/tencent/qzone.html)
+
 2023年07月20日 修复[微博视频去水印](https://docs.tenapi.cn/watermark/video.html)，修复[西瓜短视频去水印](https://docs.tenapi.cn/watermark/video.html)，修复[好看短视频去水印](https://docs.tenapi.cn/watermark/video.html)，更改[6号房去水印](https://docs.tenapi.cn/watermark/video.html)返回数据格式
 
 2023年06月11日 修复[皮皮虾去水印](https://docs.tenapi.cn/watermark/video.html)，支持帖内视频下载
