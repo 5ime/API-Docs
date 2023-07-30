@@ -2,7 +2,7 @@
 pageClass: routes
 ---
 
-# QQ匿名头像 <Badge text="正常" type="tip"/>
+# QQ匿名头像 <Badge text="维护" type="warring"/>
 
 ## 接口地址
 
