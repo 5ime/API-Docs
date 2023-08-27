@@ -2,7 +2,7 @@
 pageClass: routes
 ---
 
-# QQ空间信息 <Badge text="正常" type="tip"/>
+# QQ空间信息 <Badge text="维护" type="warning"/>
 
 ## 接口地址
 
