@@ -1,5 +1,7 @@
 # 更新日志
 
+2023年07月20日 修复[哔哩哔哩每周必看](https://docs.tenapi.cn/bilibili/weekly.html)，url 返回为空
+
 2023年07月20日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)，修复[抖音短视频图集去水印](https://docs.tenapi.cn/watermark/images.html)
 
 2023年08月04日 [蓝奏云文件直链](https://docs.tenapi.cn/utility/lanzou.html)支持文件夹列表解析
