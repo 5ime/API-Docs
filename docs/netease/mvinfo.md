@@ -7,7 +7,7 @@ pageClass: routes
 ## 接口地址
 
 ``` 
-https://tenapi.cn/v2/wyymv?id=5439044
+https://tenapi.cn/v2/wyymv
 ```
 
 ## 请求示例
