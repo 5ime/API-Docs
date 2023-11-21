@@ -1,5 +1,9 @@
 # 更新日志
 
+2023年11月21日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)
+
+2023年11月14日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)
+
 2023年09月21日 修复[微博视频下载](https://docs.tenapi.cn/watermark/video.html)
 
 2023年07月20日 修复[哔哩哔哩每周必看](https://docs.tenapi.cn/bilibili/weekly.html)，url 返回为空
