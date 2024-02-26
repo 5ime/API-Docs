@@ -1,5 +1,9 @@
 # 更新日志
 
+2023年02月26日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)，title 返回为空
+
+2024年02月21日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)
+
 2023年11月21日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)
 
 2023年11月14日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)
