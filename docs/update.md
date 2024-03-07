@@ -1,5 +1,7 @@
 # 更新日志
 
+2023年03月07日 修复热点趋势中多个热搜返回为空
+
 2023年02月26日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)，title 返回为空
 
 2024年02月21日 修复[抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)
