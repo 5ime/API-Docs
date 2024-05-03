@@ -1,6 +1,8 @@
 # 更新日志
 
-2024年04月20日 抖音短视频去水印下线维护
+2024年05月03日 [抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)已恢复正常
+
+2024年04月20日 [抖音短视频去水印](https://docs.tenapi.cn/watermark/video.html)下线维护
 
 2024年03月07日 修复热点趋势中多个热搜返回为空
 
