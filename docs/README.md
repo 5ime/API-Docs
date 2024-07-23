@@ -10,7 +10,7 @@ sidebarDepth: 0
 详见：[TenAPI issue bankruptcy](https://5ime.cn/tenapi-issue-bankruptcy.html)
 :::
 
-:::info
+:::tip
 **本站弃用原接口地址，请大家使用新接口地址访问。**
 
 ```
