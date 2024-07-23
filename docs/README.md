@@ -5,6 +5,12 @@ sidebarDepth: 0
 # 本站介绍
 
 :::danger
+**本站即日起停止维护，同时 2024 年 12 月 24 日正式下线**
+
+详见：[TenAPI issue bankruptcy](https://5ime.cn/tenapi-issue-bankruptcy.html)
+:::
+
+:::info
 **本站弃用原接口地址，请大家使用新接口地址访问。**
 
 ```
